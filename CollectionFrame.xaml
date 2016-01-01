@@ -1,0 +1,39 @@
+﻿<UserControl
+    x:Class="November16th.CollectionFrame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:November16th"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="450"
+    d:DesignWidth="450">
+
+    <Grid Margin="20">
+        <Button x:Name="CollectionFrameButton" x:FieldModifier="public"
+                            Height="450"
+                            Width= "450"
+                            Background="Gray"
+                            Padding="0"
+                            Margin="0" BorderBrush="{x:Null}"/>
+        <Grid x:Name="CollectionFrameButtonGrid" x:FieldModifier="public"
+              Height="434"
+              Width="356"
+              HorizontalAlignment="Right"
+              Background="#FF1C1C1C" Margin="0,8,8,8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2" />
+                <RowDefinition Height="144"/>
+                <RowDefinition Height="144" />
+                <RowDefinition Height="144" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="118"/>
+                <ColumnDefinition Width="118"/>
+                <ColumnDefinition Width="118"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="CollectionFrameTextBlock" x:FieldModifier="Public"  FontSize="48" Text="" HorizontalAlignment="Left" Margin="-34,-1,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Grid.RowSpan="2"/>
+        </Grid>
+    </Grid>
+</UserControl>
