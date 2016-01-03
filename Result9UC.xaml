@@ -1,0 +1,41 @@
+﻿<UserControl
+    x:Class="November16th.Result9UC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:November16th"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="150
+    " Width="300">
+    
+    <Grid>
+        <Grid x:Name="FrameGrid" HorizontalAlignment="Left" Width="300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="InfoGrid" Grid.Column="1" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="150">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14"/>
+                    <RowDefinition Height="61"/>
+                    <RowDefinition Height="14"/>
+                    <RowDefinition Height="61"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Height="14" Background="#FF3E3E42" >
+                    <TextBlock TextWrapping="Wrap" Text="Correct Answer" FontFamily="Segoe UI Light" Margin="1,1,50,0"/>
+                </Border>
+                <Border x:Name="AnswerBorder" Grid.Row ="2" HorizontalAlignment="Left" Margin="0,1,0,0"  VerticalAlignment="Top" Width="200" Background="#FF3E3E42" x:FieldModifier="Public">
+                    <TextBlock TextWrapping="Wrap" Text="Your Answer" FontFamily="Segoe UI Light" Margin="1,1,50,0"/>
+                </Border>
+                <Border Grid.Row="1" Height="86" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150">
+                    <TextBlock x:Name="CorrectAnswerTextBlock" TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" Margin="0,10,0,0" FontFamily="Segoe UI Light" FontSize="24" Foreground="White"/>
+                </Border>
+                <Border HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="86" Width="150" >
+                    <TextBlock x:Name="YourAnswerTextBlock" TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" Margin="0,10,0,0" FontFamily="Segoe UI Light" FontSize="24" Foreground="White"/>
+                </Border>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>
